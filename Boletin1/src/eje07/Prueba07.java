@@ -26,7 +26,7 @@ class Prueba07 {
 				Arguments.of(1, 0, 1998, false),				
 				Arguments.of(1, 13, 1998, false),				
 				Arguments.of(1, 1, 2027, false),			
-				Arguments.of(29, 2, 1900, true),			
+				Arguments.of(29, 2, 1900, false),			
 				Arguments.of(29, 2, 2004, true)			
 				);
 	}

@@ -8,7 +8,7 @@ public class Ejercicio07 {
 		
 		if (ano <= 2024) {
 			
-			//corregir el switch del año bisiesto
+			
 			switch(mes) {
 			case 1, 3, 5, 7, 8, 10, 12 ->{
 				if(dia >= 1 && dia <= 31) {
@@ -19,12 +19,12 @@ public class Ejercicio07 {
 					correcta = true;
 				}
 			}case 2->{
-				if ((ano % 100 == 0 && ano % 400 == 0)) {
-					if (dia >= 1 && dia <= 28) {
+				if ((ano % 4 == 0 && (ano % 100 != 0 || ano % 400 == 0))) {
+					if (dia >= 1 && dia <= 29) {
 						correcta = true;
 					}
 				}else {
-					if (dia >= 1 && dia <= 29) {
+					if (dia >= 1 && dia <= 28) {
 						correcta = true;
 					}
 				}
